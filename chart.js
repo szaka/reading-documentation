@@ -8,7 +8,7 @@ var chart = c3.generate({
 
 */
 
-
+/*
 
 var chart = c3.generate({
     bindto: '#chart',
@@ -23,3 +23,51 @@ var chart = c3.generate({
       type: 'pie'
     }
 });
+
+*/
+
+var chart = c3.generate({
+    data: {
+        
+        columns: [
+            ['sleep', 8],
+            ['eat', 3],
+            ['code', 7],
+            ['relax', 2],
+            ['other', 4]
+        ],
+        type : 'pie',
+      
+        
+    },
+
+  // Default colors
+    color: {
+        pattern: ['blue', 'orange', 'green', 'red', 'purple']
+    },
+
+
+});
+
+/*
+
+// Different colors from the default colors 
+    color: {
+        pattern: ['#D81159', '#8F2D56', '#218380', '#FBB13C', '#726DA8']
+    },
+
+*/
+
+/*
+pie: {
+        label: {
+            format: function (value, ratio, id) {
+                return d3.format('v')(value * 100 / 100) + ' ' + 'hours';
+
+            }
+        }
+    
+
+        },
+
+*/
